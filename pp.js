@@ -21,7 +21,8 @@ request.send();
 
 request.onload = function () {
     var result = JSON.parse(request.response);
-    var res = result.filter((cou)=>cou.currencies=="dollar");
-    var efg = res.map((cou)=>cou.name)
-    console.log(efg);
+    var res = result.filter((cou)=>cou.currencies);
+    var efg = res.map((cou)=>cou.currencies);
+    var dol = efg.filter((cou)=>cou.USD);
+    console.log(dol);
 }
