@@ -10,5 +10,5 @@ request.onload = function () {
     var reg= cde.map((cou)=>cou.name);
     
 
-    console.log(abc,reg,efg);
+    console.log(abc,reg);
 }
